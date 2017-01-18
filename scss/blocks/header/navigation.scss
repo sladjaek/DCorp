@@ -1,0 +1,58 @@
+
+.nav{
+  color: $colorWhite;
+  padding-top: 37px;
+     @include breakpoint (toDesktop){
+       padding-top: 15px;
+ }
+
+    picture{
+    display: inline-block;
+    }
+
+    &__mobile-menu{
+    display: none;
+    @include breakpoint (toDesktop){
+      display: block;
+      float: right;
+      padding-top: 0;
+      width: 30px;
+   }
+   &-close{
+     display: none;
+     @include breakpoint (toDesktop){
+       float: right;
+       display: none;
+       padding-top: 0;
+       width: 30px;
+    }
+   }
+  }
+
+    &__navigation{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    float:right;
+    margin-top: 17px;
+      @include breakpoint (toDesktop){
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+     }
+
+        li{
+          display: inline-block;
+          margin-left:36px;
+          @include breakpoint (toDesktop){
+            display: block;
+            padding: 10px;
+            background-color: gray;
+            margin-left: 0;
+          }
+          }
+    }
+}

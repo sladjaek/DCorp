@@ -1,0 +1,271 @@
+.news-dash{
+  display: none;
+  @include breakpoint(toDesktop){
+  display: block;
+  width: 70px;
+  height:1px;
+  background: $colorBlack;
+  margin: 67px auto 0;
+ }
+}
+
+.news{
+  margin-top: 290px;
+  position: relative;
+  z-index: $levelBottom;
+  @include breakpoint(toDesktop){
+    margin-top: 100px;
+    padding: 0  6%;
+}
+
+     &__headline{
+       margin-left: 40%;
+
+         .small{
+           font-family: 'Playfair Display',serif;
+           font-weight: 400;
+           font-size: 30px;
+           text-align: left;
+           @include breakpoint(toDesktop){
+             font-size: 24px;
+         }
+        }
+
+         .big{
+           display: block;
+           font-family: 'Playfair Display',serif;
+           font-weight: 700;
+           font-size: 80px;
+           text-align: left;
+           @include breakpoint(toDesktop){
+             font-size: 40px;
+           }
+         }
+      }
+
+      img{
+        margin-top: 110px;
+        width: 100%;
+        @include breakpoint(toDesktop){
+          margin-top: 33px;
+        }
+      }
+
+      &__date{
+        margin-top: 70px;
+        text-align: center;
+        color: #999999;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        @include breakpoint(toDesktop){
+          margin-top: 30px;
+          text-align: left;
+        }
+
+        .head{
+          margin-right: 12px;
+          text-transform: uppercase;
+          @include breakpoint(toDesktop){
+            margin-right: 8px;
+          }
+        }
+      }
+    h1 {
+      margin-top: 26px;
+      padding: 0 10%;
+      font-family: 'Playfair Display',serif;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      line-height: 40px;
+      @include breakpoint(toDesktop){
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: normal;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 45px;
+      }
+    }
+
+    p{
+      font-family: 'Roboto',sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      margin-top: 55px;
+      padding: 0  10%;
+      text-align: left;
+      line-height: normal;
+      @include breakpoint(toDesktop){
+        margin: 0;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: left;
+        padding: 0;
+      }
+    }
+
+    &__media{
+      margin-top: 180px;
+      font-size: 0;
+      @include breakpoint(toDesktop){
+          margin-top: 75px;
+      }
+
+      &__img{
+        display: inline-block;
+        width: 50%;
+        @include breakpoint(toDesktop){
+              display: block;
+              width: 100%;
+        }
+
+        .media{
+          margin: 0;
+        }
+      }
+
+      &__article{
+        display: inline-block;
+        width: 50%;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        vertical-align: top;
+        @include breakpoint(toDesktop){
+              display: none;
+        }
+
+          &__date{
+             padding-left: 8%;
+             width:100%;
+
+             .head{
+              text-transform: uppercase;
+              color: #999999;
+              margin-right: 10px;
+             }
+
+             .date{
+             color: #999999;
+            }
+          }
+
+      h1{
+        text-align: left;
+        margin-top: 28px;
+        line-height: normal;
+        padding: 0;
+        padding-left: 8%;
+        width:100%;
+      }
+
+      p{
+        margin-top: 38px;
+        line-height: normal;
+        font-size: 16px;
+        width:100%;
+      }
+
+      .read-more{
+        display: block;
+        margin-top: 45px;
+        padding-left: 8%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: $colorRed;
+        text-transform: uppercase;
+      }
+    }
+}
+
+&__readmore__mob{
+  display: none;
+  @include breakpoint(toDesktop){
+        display: block;
+  }
+
+}
+
+&__readmore{
+  margin-top: 186px;
+  text-align: center;
+  @include breakpoint(toDesktop){
+        margin-top: 23px;
+        text-align: left;
+  }
+
+  &__date{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#999999;
+
+    .head{
+      text-transform: uppercase;
+      margin-right: 8px;
+      @include breakpoint(toDesktop){
+      font-weight: 500;
+      }
+    }
+  }
+  .read-more{
+    display: block;
+    margin-top: 37px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: $colorRed;
+    text-transform: uppercase;
+    @include breakpoint(toDesktop){
+          display: none;
+    }
+  }
+
+  h1{
+    margin-top: 34px;
+    padding: 0  10%;
+    font-size: 30px;
+    @include breakpoint(toDesktop){
+    display: none;
+    }
+  }
+
+  .mobile-news{
+    display: none;
+    @include breakpoint(toDesktop){
+    display: block;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 17px;
+    }
+  }
+}
+
+.dash{
+display: block;
+width: 34px;
+height: 1px;
+margin: 0 auto;
+background-color: $colorBlack;
+margin-top: 140px;
+@include breakpoint(toDesktop){
+margin-top: 70px;
+ }
+}
+
+.all-news{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 180px;
+  @include breakpoint(toDesktop){
+  padding-bottom: 60px;
+   }
+  }
+}
